@@ -28,9 +28,9 @@ A full-stack glucose tracking application with role-based portals for **patients
 
 | Role | Email | Password |
 |---|---|---|
-| Patient | `demo@sweety.app` | `  ` |
+| Patient | `demo@sweety.app` | `SweetyDemo123!` |
 | Patient | `priya@sweety.app` | `PriyaDemo123!` |
-| Doctor | `doctor@sweety.app` | `` |
+| Doctor | `doctor@sweety.app` | `SweetyDoctor123!` |
 | Admin | `admin@sweety.app` | `SweetyAdmin123!` |
 
 The seeded doctor (Dr. Ananya Rao) has both demo patients assigned. Run `npm run seed` in `server/` to create or reset all demo accounts.
