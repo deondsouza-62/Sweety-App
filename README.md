@@ -216,7 +216,20 @@ npm run build      # production build
 
 ## Possible improvements
 
-- Refresh tokens, password reset, email verification
-- CSV export, pagination, accessible charts, frontend tests
-- Audit-log retention policies, structured logging, CI/CD, deployment config
-- Timezone preferences per user
+### Clinical intelligence
+- **Age-aware glucose ranges** — store date of birth on the patient profile and adjust healthy bandwidths/warnings by age group (e.g. tighter targets for older adults, pregnancy ranges for expecting mothers)
+- **Color-coded glucose entry** — while typing a reading, instantly color the value field green/amber/red based on the bandwidth so patients see at a glance whether a reading is in range, borderline, or critical
+- **Spike/drop detection** — flag readings that jump sharply versus the patient's own recent average and surface a gentle in-app warning ("this is much higher than your usual")
+- **Time-in-range reporting** — percentage of readings inside the target bandwidth per day/week/month, a standard metric clinicians use
+- **Doctor notes & follow-ups** — let doctors attach comments or recommendations to a patient's report and mark reviews as done
+- **Medications & meal context** — optional fields for medication taken or meal type to correlate with spikes
+
+### Notifications & engagement
+- **Customizable reminder timing** — let patients/administrators choose when slot reminders are sent
+- **Weekly digest email** — a newsletter-style summary of the patient's week (averages, trends, missed slots)
+- **In-app notification center** — bell icon showing reminders and alerts without relying on email
+- **Streaks & gentle nudges** — reward consistency (e.g. "7-day logging streak") to improve adherence
+
+- **Refresh tokens & session management** — short-lived access tokens with rotating refresh tokens, plus server-side logout/revocation
+- **Password reset & email verification** — forgot-password flow and verified-email registration
+
